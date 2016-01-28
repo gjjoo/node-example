@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p
+    form(method="POST" action="/movies/"+title+"?_method=PUT")
+      ul
+        li
+          | Movie title: #{title}
+        li
+          input(type="text" name="director" value="#{director}")
+        li
+          input(type="text" name="actor" value="#{actor}")
+      input(type="submit" value="update")
+  p
+    form(method="POST" action="/movies/"+title+"?_method=DELETE")
+      input(type="submit" value="delete")

@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  h1= title
+  ul
+    each item in list
+      li
+        a(href="/movies/#{item}") #{item}
+        form(method="POST" action="/movies/"+item+"?_method=DELETE")
+          input(type="submit" value="delete")
+
+  fieldset
+    legend 추가
+    form(method="POST" action="/movies")
+      p Movie title:
+        input(type="text" name="title")
+      p Movie director:
+        input(type="text" name="director")
+      p Movie actor:
+        input(type="text" name="actor")
+      p
+        input(type="submit" value="add")
+
+  fieldset
+    legend 모두 삭제
+    form(method="POST" action="/movies?_method=DELETE")
+      input(type="submit" value="delete all")
+
+  fieldset
+    legend 수정
+    form(method="POST" action="/movies?_method=PUT")
+      p Movie List (JSON style):
+        input(type="text" name="movies")
+      p
+        input(type="submit" value="movie list update")

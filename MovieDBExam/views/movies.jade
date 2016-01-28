@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  ul
+    each movie in movies
+      li
+        a(href="/movies/#{movie.movie_id}") #{movie.title}
+        form(action="/movies/delete?_method=delete" method="post")
+          input(type="hidden" name="movie_id" value="#{movie.movie_id}")
+          input(type="submit" value="삭제")
+  p
+    a(href="/movies/add") Add Movie

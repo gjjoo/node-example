@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Index Page
+    style.
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      h1 {
+        color: red;
+      }
+    script(src="http://code.jquery.com/jquery-1.7.js")
+    script.
+      $(document).ready(function() {
+        var alpha = 10;
+      });
+
+  body
+    // JADE String
+    #header
+      h1 #{name}
+      h2= description
+    hr
+    - for (var i=0; i<10; i++)
+        p
+          a(href="http://github.com/gjjoo") Go Te joogeunjae Web Page #{i}

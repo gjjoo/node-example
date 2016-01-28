@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="utf-8">
+  <title>채팅 클라이언트</title>
+  <link rel="stylesheet" href="css/client.css">
+</head>
+<body>
+
+  <div id="contents">
+    <h1>채팅방</h1>
+    <div class="chat_content">
+      <!-- 로그인 영역 -->
+      <div class="chat_login">
+        <input type="text" id="chat_id" placeholder="ID 입력">
+        <a href="#" id="conn">접속하기</a><br>
+        <strong>현재접속자수</strong> : <span id="now_user_cnt">-</span>
+      </div>
+      <div id="chat_form_no">ID 입력 후 접속해주세요.</div>
+
+      <!-- 채팅창 영역 -->
+      <div id="chat_form">
+        <ul id="chat_list"></ul>
+        <ul id="chat_user_list"></ul>
+        <div class="chat_input">
+          <input type="text" id="chat_input" placeholder="대화글을 입력하세요.">
+          <a href="#" id="chat_in">입력</a>
+          <a href="#" id="chat_out">나가기</a>
+        </div>
+      </div>
+
+      <!-- 접속로그영역 -->
+      <div class="chat_history">
+        <ul id="chat_logs"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/client.js"></script>
+</body>
+</html>

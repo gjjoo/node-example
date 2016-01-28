@@ -1,0 +1,12 @@
+html
+  head
+    title RESTful 테스트
+  body
+    h1 영화 리스트
+    ul
+      each item in list
+        li= item
+
+    form(method="PUT" action="/movies")
+      input(type="text" name="movies")
+      input(type="submit")

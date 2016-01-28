@@ -1,0 +1,23 @@
+{
+  "name": "movie-db-exam",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "cookie-parser": "^1.4.0",
+    "express": "^4.13.3",
+    "express-redirect": "^1.1.1",
+    "jade": "^1.11.0",
+    "method-override": "^2.3.5",
+    "mongodb": "^2.0.48",
+    "mongoose": "^4.2.6",
+    "mysql": "^2.9.0",
+    "urlencode": "^1.1.0"
+  }
+}
