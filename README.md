@@ -1,7 +1,7 @@
 # Nodejs Code Sample
 
 ### Reference
-- [Node.js란?](Resources/Node.js란?.md)
+- [Node.js란?](Resources/Node.js란.md)
 - [Node.js 특징](Resources/Node.js 특징.md)
 - [Node.js 아키텍처](Resources/Node.js 아키텍처.md)
 - [Node.js Stability](Resources/Node.js Stability.md)
